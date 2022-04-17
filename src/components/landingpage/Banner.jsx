@@ -9,7 +9,7 @@ const Banner = () => {
       <section className={`${globStyle.flex} ${style.main}`}>
         <div className={style.content}>
           <h1 className={style.heading}>
-            Create and Join Events without stress
+            Create and Join Events without stress.{" "}
           </h1>
           <p className={style.texts}>
             A one stop place to create, organize and join events, without having
