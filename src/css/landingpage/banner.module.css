@@ -28,6 +28,12 @@
   font-size: 1.4rem;
   font-weight: 700;
 }
+
+.cta > button:hover {
+  background-color: rgb(119, 23, 103);
+  border: 2px solid #fff;
+  color: #fff;
+}
 .banner_image {
   margin-right: 20px;
 }
