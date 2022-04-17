@@ -1,21 +1,28 @@
 import React from "react";
+import BannerImage from "./../../images/landingpage/EventriteBanner.png";
+import globStyle from "./../../css/utilities/style.module.css";
+import style from "./../../css/landingpage/banner.module.css";
 
 const Banner = () => {
   return (
     <>
-      <section>
-        <div className="content">
-          <h1>Scheduler</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
-            vitae, doloribus voluptatum accusamus nesciunt hic, architecto dicta
-            nisi a eveniet minus! Voluptatibus, voluptas fuga illum sint beatae
-            aliquam a ea eius consequatur animi illo placeat aspernatur eveniet
-            odio officia, et quos dolores temporibus atque ipsum enim.
-            Dignissimos quo dolorem odio.
+      <section className={`${globStyle.flex} ${style.main}`}>
+        <div className={style.content}>
+          <h1 className={style.heading}>
+            Create and Join Events without stress
+          </h1>
+          <p className={style.texts}>
+            A one stop place to create, organize and join events, without having
+            to worry about stress and logic{" "}
           </p>
+          <div className={style.cta}>
+            <button className={globStyle.button}>Create an Event</button>
+            <button className={globStyle.button}>Join an Event</button>
+          </div>
         </div>
-        <div className="image"></div>
+        <div className={style.banner_image}>
+          <img src={BannerImage} alt="Banner" className={style.img} />
+        </div>
       </section>
     </>
   );
