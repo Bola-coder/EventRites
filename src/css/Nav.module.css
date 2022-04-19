@@ -1,0 +1,23 @@
+.nav {
+  max-width: 100vw;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav > div {
+  padding: 0 10px;
+}
+
+.nav_text {
+  font-size: 2rem;
+  color: rgb(119, 23, 103);
+}
+
+.nav_links {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
