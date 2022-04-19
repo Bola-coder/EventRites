@@ -16,8 +16,18 @@
 }
 
 .nav_links {
-  width: 400px;
+  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-right: 50px;
+}
+
+.nav_links p {
+  color: rgb(119, 23, 103);
+  font-weight: 600;
+}
+
+.nav_links p:hover {
+  border-bottom: 2px solid rgb(119, 23, 103);
 }
