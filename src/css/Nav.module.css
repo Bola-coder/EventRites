@@ -1,9 +1,9 @@
 .nav {
-  max-width: 100vw;
   background-color: #eee;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  height: 80px;
 }
 
 .nav > div {
@@ -14,13 +14,25 @@
   font-size: 2rem;
   color: rgb(119, 23, 103);
 }
+.nav_content {
+  width: 300px;
+  margin-right: 50px;
+  align-self: center;
+}
+
+.ham {
+  display: none;
+}
 
 .nav_links {
-  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 50px;
+}
+
+.mobile {
+  display: none;
+  transition: all 2 ease-in;
 }
 
 .nav_links p {
@@ -30,4 +42,48 @@
 
 .nav_links p:hover {
   border-bottom: 2px solid rgb(119, 23, 103);
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: relative;
+  }
+  .nav_content {
+    width: 50px;
+    overflow: hidden;
+  }
+  .ham {
+    display: block;
+    font-size: 2.3rem;
+    color: rgb(119, 23, 103);
+  }
+  .nav_links {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+  }
+
+  .mobile > div {
+    margin-top: 20vh;
+  }
+
+  .mobile p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(119, 23, 103);
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(119, 23, 103);
+  }
 }
