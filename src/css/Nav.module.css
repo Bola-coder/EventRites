@@ -48,6 +48,7 @@
 @media screen and (max-width: 768px) {
   .nav {
     position: relative;
+    padding: 5px;
   }
   .nav_content {
     margin-right: 10px;
