@@ -24,7 +24,7 @@
   display: none;
 }
 
-.nav_links {
+.nav_links > div {
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -18,7 +18,6 @@ const NavBar = () => {
         </span>
         <div className={`${isMobile ? style.mobile : style.nav_links}`}>
           <div>
-            {/* To style mobile menu */}
             <p>Events</p>
             <p>My Schedule</p>
             <p>Login</p>
