@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import WhyEventRite from "./WhyEventRtie";
 
 const LandingPage = () => {
   document.title = "Eventrites | Landing Page";
@@ -6,6 +7,7 @@ const LandingPage = () => {
   return (
     <>
       <Banner />
+      <WhyEventRite />
     </>
   );
 };
