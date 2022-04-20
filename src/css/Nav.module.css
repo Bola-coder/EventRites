@@ -36,6 +36,7 @@
 }
 
 .nav_links p {
+  font-size: 1.3rem;
   color: rgb(119, 23, 103);
   font-weight: 600;
 }
