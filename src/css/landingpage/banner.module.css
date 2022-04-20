@@ -90,9 +90,12 @@
 }
 
 @media screen and (max-width: 425px) {
-  /* .main {
+  .main {
     height: 100vh;
-  } */
+  }
+  .content {
+    margin-top: 0;
+  }
 
   .heading {
     font-size: 2rem;
@@ -100,6 +103,7 @@
 
   .texts {
     font-size: 1.2rem;
+    padding: 7px;
   }
 
   .cta {
