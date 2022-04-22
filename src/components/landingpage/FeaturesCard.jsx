@@ -12,7 +12,11 @@ const FeaturesCard = ({ features }) => {
               <h4 className={`${index % 2 !== 0 ? style.reverse : ""}`}>
                 {feature.text}
               </h4>
-              <img src={feature.image} alt=""  className={`${index % 2 !== 0 ? style.reverseImg : ""}`}/>
+              <img
+                src={feature.image}
+                alt=""
+                className={`${index % 2 !== 0 ? style.reverseImg : ""}`}
+              />
             </div>
           </div>
         ))}

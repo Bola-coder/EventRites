@@ -20,7 +20,7 @@
 
 .card {
   padding: 20px;
-  width: 400px;
+  width: 350px;
   height: 300px;
   border-bottom: 4px solid rgb(119, 23, 103);
   border-radius: 10px;
@@ -50,6 +50,7 @@
 @media screen and (max-width: 1024px) {
   .card {
     width: 300px;
+    margin-top: 40px;
   }
 }
 
@@ -67,6 +68,7 @@
   .card {
     width: 280px;
     margin-bottom: 40px;
+    margin-top: 10px;
   }
 
   .card p {
