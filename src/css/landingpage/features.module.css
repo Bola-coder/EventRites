@@ -1,0 +1,53 @@
+.features {
+  padding: 0 20px;
+  margin-top: 60px;
+}
+.feature {
+  padding: 10px;
+  /* background-color: green; */
+}
+
+.feature h4 {
+  flex-basis: 50%;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  color: rgb(19, 17, 17);
+}
+
+.reverse {
+  order: 2;
+}
+.feature img {
+  width: 45%;
+}
+
+@media screen and (max-width: 1024px) {
+  .feature img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  /* Overrides the image from being order 2 and becomes order 2 */
+  .reverseImg {
+    order: 2;
+  }
+
+  .feature img {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .feature h4 {
+    font-size: 1.1rem;
+  }
+
+  .feature img {
+    width: 95%;
+  }
+}
