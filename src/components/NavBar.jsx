@@ -12,7 +12,11 @@ const NavBar = () => {
     <nav className={style.nav}>
       <div>
         <Link to="/">
-          <h2 className={style.nav_text}>EventRites</h2>
+          <h2
+            className={style.nav_text}
+            onClick={isMobile ? handleMobileMenu : null}>
+            EventRites
+          </h2>
         </Link>
       </div>
       <div className={style.nav_content}>
