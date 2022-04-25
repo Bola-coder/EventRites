@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 // Custom Css
@@ -14,49 +14,49 @@ const Testimonials = () => {
       index: 0,
       name: "Ronald Araujo",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum provident, neque blanditiis consectetur repellendus non nulla. Animi oassumenda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum providentnda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
       image: faceImage,
     },
     {
       index: 1,
       name: "Eric Gracia",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum provident, neque blanditiis consectetur repellendus non nulla. Animi oassumenda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum providentnda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
       image: faceImage,
     },
     {
       index: 2,
       name: "Dani Alves",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum provident, neque blanditiis consectetur repellendus non nulla. Animi oassumenda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum providentnda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
       image: faceImage,
     },
     {
       index: 3,
       name: "Gerald Pique",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum provident, neque blanditiis consectetur repellendus non nulla. Animi oassumenda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum providentnda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
       image: faceImage,
     },
     {
       index: 4,
       name: "Sergio Busquet",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum provident, neque blanditiis consectetur repellendus non nulla. Animi oassumenda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum providentnda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
       image: faceImage,
     },
     {
       index: 5,
       name: "Sergi Roberto",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum provident, neque blanditiis consectetur repellendus non nulla. Animi oassumenda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum providentnda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
       image: faceImage,
     },
     {
       index: 6,
       name: "Riqui Puig",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum provident, neque blanditiis consectetur repellendus non nulla. Animi oassumenda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum providentnda sint placeat impedit laboriosam asperiores. Velit nihil a, iure rerum dicta maxime facere?",
       image: faceImage,
     },
   ];
@@ -65,7 +65,15 @@ const Testimonials = () => {
     <section>
       <Swiper
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={1}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
         loop={true}
         autoplay={{
           delay: 3000,
@@ -74,11 +82,15 @@ const Testimonials = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Autoplay, Pagination]}
-        className="mySwiper">
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="swiper">
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.index}>
-            <TestimonialCards testimonial={testimonial} />
+            <TestimonialCards
+              testimonial={testimonial}
+              className="swiper-slide"
+            />
           </SwiperSlide>
         ))}
       </Swiper>
