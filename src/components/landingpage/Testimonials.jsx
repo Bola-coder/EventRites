@@ -63,7 +63,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section style={{ marginTop: "50px" }}>
+    <section style={{ marginTop: "50px", marginBottom: "100px" }}>
       <div className={style.title} style={{ marginBottom: "30px" }}>
         <h2>Testimonials</h2>
       </div>
@@ -93,10 +93,7 @@ const Testimonials = () => {
         className="swiper">
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.index}>
-            <TestimonialCards
-              testimonial={testimonial}
-              className="swiper-slide"
-            />
+            <TestimonialCards testimonial={testimonial} />
           </SwiperSlide>
         ))}
       </Swiper>

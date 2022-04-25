@@ -2,12 +2,9 @@
   text-align: center;
   font-size: 1.4rem;
   margin-top: 70px;
-  color: rgb(119, 23, 103);
+  color: var(--main);
+  margin-bottom: 30px;
 }
-
-/* .title h2 {
-  border-bottom: 4px solid rgb(119, 23, 103);
-} */
 
 .cards {
   margin-top: 20px;
@@ -22,25 +19,25 @@
   padding: 20px;
   width: 350px;
   height: 300px;
-  border-bottom: 4px solid rgb(119, 23, 103);
+  /* border-bottom: 4px solid var(--main); */
   border-radius: 10px;
-  box-shadow: 2px 2px 5px 2px rgb(185, 169, 169);
+  box-shadow: 5px 5px 10px 2px rgb(185, 169, 169);
 }
 
 .card:hover {
-  transform: scale(1.08);
-  background-color: rgb(119, 23, 103);
-  color: #fff;
+  transform: scale(1.05);
+  background-color: var(--main);
+  color: var(--text);
 }
 
 .card h4 {
   text-align: center;
   font-size: 1.2rem;
-  color: rgb(119, 23, 103);
+  color: var(--main);
 }
 
 .card:hover h4 {
-  color: #fff;
+  color: var(--text);
 }
 .card p {
   font-size: 1.2rem;
