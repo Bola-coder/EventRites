@@ -1,11 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 // Custom Css
 import "./../../css/landingpage/swiper.css";
 import TestimonialCards from "./TestimonialCards";
+import style from "./../../css/landingpage/testimonial.module.css";
 import faceImage from "./../../images/landingpage/faceImage2.jpg";
 
 const Testimonials = () => {
@@ -62,11 +63,17 @@ const Testimonials = () => {
   ];
 
   return (
-    <section>
+    <section style={{ marginTop: "50px" }}>
+      <div className={style.title} style={{ marginBottom: "30px" }}>
+        <h2>Testimonials</h2>
+      </div>
+
+      {/* Swiper styles */}
       <Swiper
         spaceBetween={10}
         slidesPerView={1}
         breakpoints={{
+          // Responsiveness
           768: {
             slidesPerView: 2,
           },
@@ -82,8 +89,7 @@ const Testimonials = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         className="swiper">
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.index}>

@@ -8,6 +8,13 @@
   box-shadow: 2px 2px 7px 1px rgb(196, 168, 168);
 }
 
+.title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 70px;
+  color: rgb(119, 23, 103);
+}
+
 .name {
   padding: 10px;
   display: flex;
