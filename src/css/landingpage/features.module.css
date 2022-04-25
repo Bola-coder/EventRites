@@ -1,5 +1,5 @@
 .features {
-  padding: 0 20px;
+  padding: 0 50px;
   margin-top: 60px;
 }
 .feature {
@@ -8,7 +8,7 @@
 }
 
 .feature h4 {
-  flex-basis: 50%;
+  flex-basis: 40%;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 3px;
@@ -19,7 +19,7 @@
   order: 2;
 }
 .feature img {
-  width: 45%;
+  width: 40%;
 }
 
 @media screen and (max-width: 1024px) {

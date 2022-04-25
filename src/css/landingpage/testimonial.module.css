@@ -1,0 +1,28 @@
+.testimonial {
+  margin-left: 30px;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgb(224, 62, 170);
+  box-shadow: 2px 2px 7px 1px rgb(196, 168, 168);
+}
+
+.name {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name h5 {
+  font-size: 1.2rem;
+}
+
+.name img {
+  width: 60px;
+}
+
+.comment {
+  text-align: justify;
+}

@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import Features from "./Features";
+import Testimonials from "./Testimonials";
 import WhyEventRite from "./WhyEventRtie";
 
 const LandingPage = () => {
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Banner />
       <WhyEventRite />
       <Features />
+      <Testimonials />
     </>
   );
 };
