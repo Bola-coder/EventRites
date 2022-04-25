@@ -1,10 +1,10 @@
 .testimonial {
-  margin-left: 30px;
-  padding: 20px;
-  width: 400px;
+  /* margin-left: 30px; */
+  /* padding: 20px; */
+  /* width: 400px; */
   height: 300px;
   border-radius: 20px;
-  background-color: rgb(224, 62, 170);
+  background-color: rgb(62, 105, 224);
   box-shadow: 2px 2px 7px 1px rgb(196, 168, 168);
 }
 
@@ -25,4 +25,10 @@
 
 .comment {
   text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    width: 500px;
+  }
 }

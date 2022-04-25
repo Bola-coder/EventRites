@@ -1,4 +1,10 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+// Custom Css
+import "./../../css/landingpage/swiper.css";
 import TestimonialCards from "./TestimonialCards";
 import faceImage from "./../../images/landingpage/faceImage2.jpg";
 
@@ -57,7 +63,25 @@ const Testimonials = () => {
 
   return (
     <section>
-      <TestimonialCards testimonials={testimonials} />
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={3}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper">
+        {testimonials.map((testimonial) => (
+          <SwiperSlide key={testimonial.index}>
+            <TestimonialCards testimonial={testimonial} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
