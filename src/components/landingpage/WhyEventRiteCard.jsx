@@ -7,8 +7,12 @@ const WhyEventRiteCards = ({ details }) => {
         <h2>Why Choose EventRites?</h2>
       </div>
       <div className={style.cards}>
-        {details.map((ele) => (
-          <div key={ele.id} className={style.card}>
+        {details.map((ele, index) => (
+          <div
+            key={ele.id}
+            className={`${style.card} ${
+              index % 2 === 0 ? style.card_even : ""
+            }`}>
             <h4>{ele.name}</h4>
             <p>{ele.content}</p>
           </div>
