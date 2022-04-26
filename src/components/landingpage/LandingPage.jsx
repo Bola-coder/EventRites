@@ -2,6 +2,7 @@ import Banner from "./Banner";
 import Features from "./Features";
 import Testimonials from "./Testimonials";
 import WhyEventRite from "./WhyEventRtie";
+import Pricing from "./Pricing";
 
 const LandingPage = () => {
   document.title = "Eventrites | Landing Page";
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <Banner />
       <WhyEventRite />
       <Features />
+      <Pricing />
       <Testimonials />
     </>
   );

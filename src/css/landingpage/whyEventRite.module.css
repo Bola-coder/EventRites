@@ -19,6 +19,8 @@
   padding: 20px;
   width: 350px;
   height: 300px;
+  /* color: var(--main);
+  font-weight: bolder; */
   /* border-bottom: 4px solid var(--main); */
   border-radius: 10px;
   box-shadow: 5px 5px 10px 2px rgb(185, 169, 169);

@@ -44,7 +44,7 @@ a {
 .nav_links p {
   font-size: 1.1rem;
   color: var(--main);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .nav_links p:hover {
