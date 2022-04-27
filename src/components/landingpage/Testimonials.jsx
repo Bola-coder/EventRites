@@ -63,7 +63,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <section style={{ marginTop: "50px", marginBottom: "100px" }}>
+    <section
+      style={{ maxWidth: "100vw", marginTop: "50px", marginBottom: "100px" }}>
       <div className={style.title} style={{ marginBottom: "30px" }}>
         <h2>Testimonials</h2>
       </div>

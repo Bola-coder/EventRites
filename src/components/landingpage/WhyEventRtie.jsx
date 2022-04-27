@@ -23,7 +23,7 @@ const WhyEventRite = () => {
     },
   ];
   return (
-    <section>
+    <section style={{ maxWidth: "100vw" }}>
       <WhyEventRiteCards details={cardDetails} />
     </section>
   );

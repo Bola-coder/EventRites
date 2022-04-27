@@ -15,7 +15,7 @@ const Features = () => {
     },
   ];
   return (
-    <section>
+    <section style={{ maxWidth: "100vw" }}>
       <FeaturesCard features={features} />
     </section>
   );

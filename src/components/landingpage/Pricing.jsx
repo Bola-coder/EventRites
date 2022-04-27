@@ -35,7 +35,7 @@ const Pricing = () => {
     },
   ];
   return (
-    <section style={{ padding: "20px" }}>
+    <section style={{ padding: "20px", maxWidth: "100vw" }}>
       <h2
         style={{
           textAlign: "center",
