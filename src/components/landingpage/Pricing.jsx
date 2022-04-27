@@ -5,17 +5,23 @@ const Pricing = () => {
   const pricing = [
     {
       plan: "Basic",
-      description: "A basic free plan for starters.",
-      perks: ["Free", "Create an event monthly", "Up to 50 attendees"],
+      description: "A basic free plan for $0 monthly.",
+      perks: [
+        "No payment needed",
+        "Create a free event monthly",
+        "Up to 50 attendees",
+      ],
+      btnText: "Get started for $0 monthly",
     },
     {
       plan: "Standard",
-      description: "A standard plan for just 2$20 monthly.",
+      description: "A standard plan for just $20 monthly.",
       perks: [
         "Mail Response integrated",
         "Create up to  3 events monthly",
         "Up to 200 Attendees",
       ],
+      btnText: "Get started for $20 monthly",
     },
     {
       plan: "Premium",
@@ -25,6 +31,7 @@ const Pricing = () => {
         "Create Unlimited Events",
         "Unlimited Attendees",
       ],
+      btnText: "Get started for $80 monthly",
     },
   ];
   return (

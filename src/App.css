@@ -1,6 +1,7 @@
 :root {
   --main: rgb(14, 61, 192);
   --text: #fff;
+  --submain: rgb(2, 30, 107);
   --grayBg: rgb(182, 166, 166);
 }
 * {

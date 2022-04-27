@@ -19,5 +19,88 @@
   text-align: center;
   font-size: 1.7rem;
   margin-bottom: 10px;
+  color: var(--submain);
+}
+
+.pricing__desc {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.pricing__list {
+  list-style-type: circle;
+  /* list-style-image: url("./../../..//public/images/checkImage.jpg"); */
+  padding: 10px;
+}
+
+.pricing__list li {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: var(--main);
+  color: var(--text);
+  border: 0;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  border: 3px solid var(--main);
+  background-color: var(--text);
   color: var(--main);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .pricings {
+    padding: 30px;
+    justify-content: space-between;
+  }
+  .pricing {
+    padding: 20px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricings {
+    flex-direction: column;
+  }
+  .pricing {
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 300px;
+  }
+
+  .btn {
+    padding: 12px 17px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pricing {
+    width: 300px;
+    height: unset;
+  }
+  .pricing__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .pricing__desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pricing {
+    width: 280px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+  }
 }
