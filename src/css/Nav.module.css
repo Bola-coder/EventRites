@@ -2,7 +2,8 @@
   background-color: #eee;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  /* padding: 10px; */
   height: 9vh;
 }
 
