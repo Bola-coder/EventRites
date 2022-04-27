@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&display=swap");
+
 :root {
   --main: rgb(14, 61, 192);
   --text: #fff;
@@ -9,5 +11,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100vw;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
   max-width: 100vw;
 }
