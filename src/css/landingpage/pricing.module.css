@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 425px) {
   .pricing {
-    width: 300px;
+    width: 280px;
     height: unset;
   }
   .pricing__title {
@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 375px) {
   .pricing {
-    width: 280px;
+    width: 250px;
   }
 
   .btn {
