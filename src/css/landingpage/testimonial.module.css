@@ -43,8 +43,9 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .testimonial {
     margin-left: 0;
+    width: 270px;
   }
 }
